@@ -607,6 +607,70 @@ a {
     margin-bottom: 0;
 }
 
+.subscribe-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.subscribe-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.form-wrap {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 44px;
+}
+
+.email-input {
+    padding: 8px 16px;
+    min-width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    color: var(--white-color);
+    transition: box-shadow 250ms var(--cubic);
+}
+
+.email-input:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.email-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04px;
+    color: var(--white-color);
+}
+
+.subscribe-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    width: 165px;
+}
+
 .nav-bar {
     padding: 96px 0 120px;
     row-gap: 48px;
