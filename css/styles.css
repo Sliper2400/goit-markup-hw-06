@@ -843,6 +843,7 @@ a {
 
     width: 408px;
     min-height: 576px;
+    max-height: 100%;
     padding: 24px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -885,4 +886,146 @@ a {
 
 input {
     display: block;
+}
+
+.modal-title {
+    display: block;
+    margin-top: 72px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--grey-color);
+}
+
+.modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+
+}
+
+.modal-form-field {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.modal-form-input {
+    width: 100%;
+    height: 40px;
+    opacity: 0.2;
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition-property: outline-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    padding: 0 38px;
+}
+
+.modal-form-input:focus {
+    outline-color: var(--blue-color);
+    border: var(--blue-color);
+}
+
+.modal-form-input:focus+.modal-form-icon {
+    fill: var(--blue-color);
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(16px);
+    pointer-events: none;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+}
+
+.modal-form-message {
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    max-height: 180px;
+    resize: none;
+    border: 1px solid var(--grey-color);
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition-property: outline-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+.modal-form-message:focus {
+    outline-color: var(--blue-color);
+}
+
+.modal-form-message::placeholder {
+    font-size: 12px;
+}
+
+.modal-form-agreement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.modal-form-agreement-text {
+    font-size: 14px;
+}
+
+.modal-form-agreement-box {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--grey-color);
+    border-radius: 2px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+    background-image: url("data:image/svg+xml,%3Csymbol id='icon-Vector' viewBox='0 0 40 32'%3E%3Cpath fill='%23f4f4fd' style='fill: var(--color1, %23f4f4fd)' d='M33.843 1.958c0.657-0.578 1.532-0.897 2.44-0.891s1.777 0.338 2.425 0.925c0.648 0.587 1.023 1.383 1.047 2.221s-0.305 1.651-0.919 2.269l-18.62 21.495c-0.32 0.318-0.707 0.574-1.136 0.751s-0.893 0.273-1.364 0.281c-0.47 0.008-0.938-0.072-1.374-0.234s-0.833-0.405-1.166-0.712l-12.348-11.398c-0.344-0.296-0.62-0.652-0.811-1.049s-0.294-0.824-0.302-1.258c-0.008-0.434 0.078-0.865 0.254-1.267s0.438-0.768 0.77-1.075 0.728-0.549 1.164-0.711c0.436-0.162 0.903-0.242 1.373-0.235s0.933 0.103 1.363 0.279c0.429 0.177 0.816 0.431 1.136 0.749l9.772 9.016 16.207-19.062c0.029-0.033 0.060-0.065 0.093-0.095h-0.005z'%3E%3C/path%3E%3C/symbol%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0;
+}
+
+.modal-form-agreement-box:checked {
+    background-color: var(--purple-color);
+    background-size: 8px;
+
+}
+
+.modal-send-btn {
+    cursor: pointer;
+    display: block;
+
+    margin: 24px auto;
+    text-align: center;
+    letter-spacing: 0.04em;
+    padding: 16px 32px;
+    color: #FFFFFF;
+    border: none;
+    background: var(--blue-color);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    border-radius: 4px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+}
+
+.modal-send-btn:hover,
+.modal-send-btn:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
