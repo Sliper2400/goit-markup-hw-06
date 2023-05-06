@@ -419,7 +419,11 @@
           placeholder="Text input"></textarea>
 
         <label class="modal-form-agreement" for="user-button">
-          <input class="modal-form-agreement-box" type="checkbox" name="Accept" id="user-button" required>
+          <input class="modal-form-agreement-box .visually-hidden" type="checkbox" name="Accept" id="user-button"
+            required>
+          <svg class="modal-form-agreement-icon" width="16" height="16">
+            <use class="modal-form-agreement-unchacked" href="./images/icons.svg#unchacked"></use>
+            <use class="modal-form-agreement-chacked" href="./images/icons.svg#chacked"></use>
           </svg>
           <span class="modal-form-agreement-text">I accept the terms and conditions of the <a
               class="modal-form-agreement-link" href="">Privacy Policy</a></span>
