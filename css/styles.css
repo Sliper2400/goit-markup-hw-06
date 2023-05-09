@@ -1037,10 +1037,8 @@ input {
 }
 
 .modal-form-agreement-icon {
-
-    /* stroke: 1px solid rgba(46, 47, 66, 0.4); */
-    /* border: 1px solid rgba(46, 47, 66, 0.4); */
-    border: 1px solid var(--grey-color);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    /* border: 1px solid var(--grey-color); */
     border-radius: 3.5px;
 }
 
@@ -1049,6 +1047,7 @@ input {
     transition-property: opacity;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
+    stroke: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-agreement-box:checked+.modal-form-agreement-icon>.modal-form-agreement-unchacked {
